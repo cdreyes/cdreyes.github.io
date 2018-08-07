@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
           </button>
-          <a class="navbar-brand" href="#" id="logo">Latitude</a>
+          <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
         </div>
 
         <!-- Dropdown and Other Links -->
@@ -55,44 +55,45 @@
       </div>
     </div>
   </nav>
-  <!-- End of navigation bar -->
 
-  <!-- Section with Graphs -->
+  <!-- Comparison Section -->
   <div class="container">
-      <section class="row">
+    <article class="description-content row">
+      <div class="col-xs-12">
+          <h1 class="description-header">Comparison: Latitude vs X</h1>
+          <hr>
+          <p class="description-text">Click any plot to get an in-depth analysis.</p>
+      </div>
+      <!-- Section with images and links to the visualization pages -->
+      <div class="col-md-6">
+          <h2 class="comparison-header">vs. Max Temperature</h2>
+          <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="img-responsive"></a>
+          <hr class="visible-xs visible-sm">
+      </div>   
+      <div class="col-md-6">
+        <h2 class="comparison-header">vs. Humidity</h2>
+        <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity" class="img-responsive"></a>
+        <hr class="visible-xs visible-sm">
+      </div>
+      <div class="col-md-6">
+        <h2 class="comparison-header">vs. Cloudiness</h2>
+        <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="img-responsive"></a>
+        <hr class="visible-xs visible-sm">
+      </div>
+      <div class="col-md-6">
+        <h2 class="comparison-header">vs. Wind Speed</h2>
+        <a href="visualizations/windspeed.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="img-responsive"></a>
+      </div>         
+    </article>
+  </div>
 
-        <!-- Section with an explanation of the project -->
-        <div class="col-md-8">
-          <article class="description-content">
-            <h1 class="description-header">Summary: Latitude vs. X</h1>
-            <hr>
-            <img src="assets/images/Fig1.png" alt="" id="description-image"/>
-            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-          </article>
-        </div>
+        
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-        <!-- Section with images and links to the visualization pages -->
-        <div class="col-md-4">
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-          <section id="imageNav-area">
-            <div class="imageNav-content">
-              <h2 class="imageNav-header">Visualizations</h2>
-              <hr>
-              <div id="images">
-                <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
-                <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
-                <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
-                <a href="visualizations/windspeed.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
-              </div>
-            </div>
-          </section>
-
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!--<img width="200" src="assets/images/Fig1.png" alt="Figure 1" /> 
   <img width="200" src="assets/images/Fig1.png" alt="Figure 1" />-->
 </body>
