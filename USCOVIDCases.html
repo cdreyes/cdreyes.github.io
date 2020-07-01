@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Embed Tableau Viz using JavaScript API</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href="bootstrap.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script>
+	<script type="text/javascript" src="embedViz.js"></script>
+</head>
+<body>
+	<div class='container'>
+		<div class='row'>
+			<h2 class='span7 pagination-centered'>US COVID-19 Confirmed Cases</h2>
+		</div>
+		<div class='row'><h3 class='span7 pagination-centered' id='sheetName'></h3></div>
+		<div class='row'>
+		
+			<ul id = 'menu' class='nav nav-list offset1 span2'>
+				<li class='nav-header'>Switching Views</li>
+				<li><a onClick="switchView('Confirmed Cases by State')">Confirmed Cases by State</a></li>
+				<li><a onClick="switchView('Confirmed Cases by County')">Confirmed Cases by County</a></li>
+				<li><a onClick="switchView('States with Most Confirmed Cases')">States with Most Confirmed Cases</a></li>
+				<li><a onClick="switchView('Daily Confirmed Cases by State')">Daily Confirmed Cases by State</a></li>
+
+				<li class='nav-header'>Filtering</li>
+				<li><a onClick="show('Region','Mid-Atlantic')">Mid-Atlantic</a></li>
+				<li><a onClick="show('Region','Mid-West')">Mid-West</a></li>
+				<li><a onClick="show('Region','New England')">New England</a></li>
+				<li><a onClick="show('Region','The South')">The South</a></li>
+				<li><a onClick="show('Region','The Southwest')">The Southwest</a></li>
+				<li><a onClick="show('Region','The West')">The West</a></li>
+		
+			<div id='viz'></div>
+			<script>
+			</script>
+		</div>
+	</div>
+</body>
+</html>
